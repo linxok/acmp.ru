@@ -1,0 +1,18 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main ( void )
+{
+	int a =0,b =0;
+	cin >> a;
+	
+	a=a/10;
+	
+	
+	cout << b;
+	return 0;
+
+}
+

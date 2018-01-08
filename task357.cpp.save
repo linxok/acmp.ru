@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+	int *N = new int[10000];
+	int K;
+	int X = 0, Y = 0, Z = 0, k = 0, i = 0;
+
+	while ( 1 )
+	{
+		N[i]=getchar()-48;
+		if (N[i] == '\n') break;
+
+		cout << N[i] << endl;
+		i++;
+	}
+/*
+	for ( int k = i-1; k >= 0; i-- )
+	{
+		if ( ! ( k % 2 ) )
+		{
+			X += N[k] ;
+		}
+
+		else { Y += N[k] ; }
+	}
+
+	Z = abs(X-Y);
+	if (Z%11) cout << "NO";
+	else cout << "YES";
+*/
+	return 0;
+}

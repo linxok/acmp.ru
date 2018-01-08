@@ -1,0 +1,22 @@
+#include <iostream>
+#include <fstream>
+#include <vector>
+using namespace std;
+int main()
+{
+	
+	vector <int>Super_vector ( 3 );
+	
+	cin >> Super_vector[1];
+	Super_vector[2] = 9;
+	Super_vector[3] = Super_vector[2] - Super_vector[1];
+	
+	for ( int i = 1; i <= 3; i++ )
+	{
+		fout << Super_vector[i] << "";
+	}
+	
+	fin.close();
+	fout.close();
+	return 0;
+}

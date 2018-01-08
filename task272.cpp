@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main (void)
+{
+	int minx = 10001, maxx = -10001;
+	int a =0;
+	int i =1;
+	while (cin.peek() != '\n')
+	{
+		scanf("%i", &a) ;
+
+		if (!((i++)%2))
+		{
+			if (maxx < a)
+				maxx = a;
+		} else
+		{
+
+			if (minx > a)
+				minx =a;
+		}
+
+	}
+
+	cout << (minx+maxx);
+
+	return 0;
+}

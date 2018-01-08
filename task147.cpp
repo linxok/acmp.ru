@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+/*
+long fobinachi (int n);
+
+int main()
+{
+	int n;
+	cin >> n;
+	cout << fobinachi(n);
+	return 0;
+}
+
+long fobinachi (int n)
+{
+	if (n < 2)
+	return n;
+	else
+	return fobinachi(n-1) +  fobinachi(n -2);
+}
+*/

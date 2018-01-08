@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int n, m, d;
+	cin >> n >> m;
+
+	while ( n != 0 )
+	{
+		d = n / m;
+		n = n - d;
+		m--;
+		cout << d << " ";
+	}
+	return 0;
+}

@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+#include <cstdlib>
+
+
+
+using namespace std;
+int main()
+{
+	string inTxt;
+	cin >> inTxt;
+
+	if ( inTxt.size() < 5 )
+	{
+		cout << "ERROR";
+		return 0;
+	}
+
+	cout << ( abs ( (int)inTxt[0] - (int)inTxt[3] ) );
+
+	if ( ( ( ( abs ( (int)inTxt[0] - (int)inTxt[3] ) ) == 1 ) && ( ( abs ( (int)inTxt[1] - (int)inTxt[4] ) ) == 2 ) ) ||
+		( ( ( abs ( (int)inTxt[0] - (int)inTxt[3] ) == 2 ) ) || ( ( abs ( (int)inTxt[1] - (int)inTxt[4] ) ) == 1 ) ) )
+	{
+		cout << "YES";
+	}
+
+	else
+	{
+		cout << "NO";
+	}
+
+	return 0;
+}

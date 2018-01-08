@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+
+int main()
+{
+    int s , p ,x=0 , y=0;
+    cin >> s >> p;
+    
+    for (x=0; x<1000; x++)
+    {
+		y= s-p;
+		if (x<=y || x*y == p)
+		co
+    }
+    
+	return 0;
+}

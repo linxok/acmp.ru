@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n;
+	scanf ( "%d", &n );
+
+	if ( n >= 1 && n <= 9999 )
+	{
+		if ( ( ( n % 400 ) == 0 ) || ( ( ( n % 4 ) == 0 ) && ( ( n % 100 ) != 0 ) ) )
+		{
+			printf ( "12/09/%04d", n );
+		}
+
+		else
+		{
+			printf ( "13/09/%04d", n );
+		}
+	}
+
+	return 0;
+}

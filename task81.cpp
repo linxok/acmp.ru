@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cstdlib>
+#include <cstring>
+using namespace std;
+int main()
+{
+	int N;
+	cin >> N;
+	int mass[N];
+	int minN =0, maxN =0;
+	for (int i=0; i<N; i++)
+	{
+		cin >> mass[i];
+		if (mass[minN] > mass[i])
+		{
+			minN = i;
+		}
+		if (mass[maxN] < mass[i])
+		{
+			maxN = i;
+		}
+	}
+	cout << mass[minN] << " "<< mass[maxN];
+	return 0;
+}

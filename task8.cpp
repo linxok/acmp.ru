@@ -1,0 +1,17 @@
+#include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
+
+using namespace std;
+
+
+int main ()
+{
+	int a,b,c;
+	cin >> a >> b >> c;
+	if ((a*b)==c)
+	{ cout << "YES";}
+	else{cout << "NO";}
+	return 0;
+}

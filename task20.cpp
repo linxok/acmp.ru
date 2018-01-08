@@ -1,0 +1,55 @@
+#include <iostream>
+
+bool less ( const int a, const int b )
+{
+    return a < b;
+}
+bool larger ( const int a, const int b )
+{
+    return a > b;
+}
+
+int main()
+{
+    bool ( *cmp[ 2 ] ) ( const int, const int ) = { less, larger };
+    bool currentCmp;
+    std::size_t size,
+        max = 2,
+        current = 2;
+    std::cin >> size;
+    int *arr = new int [ size ];
+
+    for ( std::size_t i = 0; i < size; i++ )
+    {
+        scanf("%d", &arr[ i ]) ;
+    }
+
+    currentCmp = arr[ 0 ] < arr[ 1 ];
+
+    for ( std::size_t i = 2; i < size; i++ )
+    {
+        if ( ( *cmp[ currentCmp ] ) ( arr[ i - 1 ], arr[ i ] ) )
+        {
+            current++;
+            currentCmp = !currentCmp;
+        }
+
+        else
+        {
+            if ( current > max )
+            {
+                max = current;
+            }
+
+            current = 2;
+        }
+    }
+
+    if ( current > max )
+    {
+        max = current;
+    }
+
+    std::cout << max ;
+    return 0;
+}
